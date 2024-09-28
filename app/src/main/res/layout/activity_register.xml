@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/gradient"
+    android:gravity="center_horizontal"
+    >
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:src="@drawable/designer"
+        >
+    </ImageView>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="16dp"
+        android:text="Welcome"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:paddingBottom="8dp"/>
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingBottom="8dp"/>
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingBottom="8dp"
+        />
+    <EditText
+        android:id="@+id/et_checkPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="CheckPassword"
+        android:inputType="textPassword"
+        android:paddingBottom="8dp">
+    </EditText>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <CheckBox
+            android:id="@+id/checkbox_ms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Ms"
+            android:button="@drawable/round_checkbox_selector"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="100dp"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/checkbox_mrs"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:button="@drawable/round_checkbox_selector"
+            android:text="  Mrs"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/checkbox_agree"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/round_checkbox_selector"
+        android:text="  我已经阅读并同意 《用户协议条款》"/>
+
+    <Button
+        android:id="@+id/button_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
